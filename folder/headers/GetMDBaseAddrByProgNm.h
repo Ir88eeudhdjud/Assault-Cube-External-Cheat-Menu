@@ -2,8 +2,8 @@
 #define GET_MD_BASE_ADDR_BY_PROG_NM
 
 #include <windows.h>
-#include <tlhelp32.h> // CreateToolhelp32Snapshot, MODULEENTRY32, Module32First, Module32Next
-#include <handleapi.h> // CloseHandle
+#include <tlhelp32.h>
+#include <handleapi.h>
 
 uintptr_t get_module_base_addr(const char *mdName, DWORD pid)
 {
